@@ -49,16 +49,16 @@ section {
     padding: 3rem;
 }
 
- .sedans {
+.sedans {
     background: var(--orange);
     border-radius: 8px 8px 0 0;
- }
+}
 
- .suvs {
+.suvs {
     background: var(--cyan);
- }
+}
 
- .luxuosos {
+.luxuosos {
     background: var(--dark-cyan);
     border-radius: 0 0 8px 8px;
 }
@@ -73,4 +73,36 @@ section {
 
 .luxuosos a {
     color: var(--dark-cyan);
+}
+
+@media(min-width: 920px) {
+
+    body{
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        max-width: 57.5rem;
+    }
+
+    p {
+        margin-bottom: 5.25rem;
+    }
+
+    a:houver {
+        background: transparent;
+        color: var(--gray);
+    }
+
+    .sedans {
+        border-radius: 8px 0 0 8px;
+    }
+    .luxuosos {
+        border-radius: 0 8px 8px 0;
+    }
 }
